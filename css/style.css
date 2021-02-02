@@ -19,7 +19,7 @@
 }
 
 .page {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -102,6 +102,15 @@
 .button {
   color: var(--primary-text-color);
   background-color: var(--white-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .button.primary {
@@ -135,10 +144,6 @@
 }
 
 /* Team Наша команда */
-
-.team-link {
-  text-decoration: none;
-}
 
 .section-team {
   background-color: #f5f4fa;
@@ -180,6 +185,21 @@
   line-height: 1.7;
 }
 
+.footer-adress {
+  color: rgba(255, 255, 255, 1);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.contacts-adress .footer-adress:hover,
+.contacts-adress .footer-adress:focus {
+  color: var(--accent-color);
+}
+
 .mail {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -189,6 +209,11 @@
   text-decoration: none;
 }
 
+.contacts-adress .mail:hover,
+.contacts-adress .mail:focus {
+  color: var(--accent-color);
+}
+
 .number {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -196,6 +221,11 @@
   font-size: 14px;
   line-height: 1.7;
   text-decoration: none;
+}
+
+.contacts-adress .number:hover,
+.contacts-adress .number:focus {
+  color: var(--accent-color);
 }
 
 /* Стили Portfolio.html */
