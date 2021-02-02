@@ -116,6 +116,10 @@
 .button.primary {
   background-color: var(--accent-color);
   color: var(--white-color);
+  margin: 0 auto 0 auto;
+  padding: 10px 32px 10px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
 }
 
 /* Features Особенности */
