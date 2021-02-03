@@ -142,8 +142,7 @@ img {
 /* Hero */
 
 .section-hero {
-  width: 1600px;
-  height: 600px;
+  max-width: 1600px;
   background-color: #2f303a;
 }
 
@@ -199,7 +198,6 @@ img {
 .features {
   padding-top: 0px;
   padding-bottom: 94px;
-  height: 101px;
 }
 
 .features-list {
