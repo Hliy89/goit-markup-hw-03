@@ -48,6 +48,11 @@ img {
   letter-spacing: 0.03em;
 }
 
+.item {
+  margin-left: 0;
+  margin-top: 0;
+}
+
 .list {
   padding: 0;
   margin: 0;
@@ -64,6 +69,11 @@ img {
 
 .header {
   background-color: #ffffff;
+}
+
+.container-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* Site nav */
@@ -141,13 +151,18 @@ img {
 
 /* Hero */
 
-.section-hero {
+.hero {
   max-width: 1600px;
   background-color: #2f303a;
 }
 
-.hero-title {
+.section-hero {
   padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  padding-top: 0;
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -171,6 +186,11 @@ img {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.button-hero {
+  display: flex;
+  justify-content: center;
 }
 
 .button.primary {
@@ -200,11 +220,16 @@ img {
   padding-bottom: 94px;
 }
 
+.container-features {
+  display: block;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 0;
-  margin-top: 0;
   padding: 0;
 }
 
@@ -242,6 +267,7 @@ img {
 .works-list {
   margin-bottom: 94px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .works-list .item:not(:last-child) {
@@ -264,9 +290,15 @@ img {
   background-color: #f5f4fa;
 }
 
-.team-list {
+.container-team {
+  margin-top: 94px;
   margin-bottom: 94px;
+}
+
+.team-list {
+  /* margin-bottom: 94px; */
   display: flex;
+  flex-wrap: wrap;
 }
 
 .team-list .team-card:not(:last-child) {
@@ -298,9 +330,9 @@ img {
 
 /* Footer Подвал */
 
-.footer > .container {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.container-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer {
@@ -374,7 +406,10 @@ img {
 /* Стили Portfolio.html */
 
 .sectin-portfolio {
-  background-color: #e5e5e5;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #ffffff;
 }
 
 .page-portfolio {
@@ -385,7 +420,30 @@ img {
 
 /* Button */
 
+.container-btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.button-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.button-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button.secondary {
+  margin: 0 auto 0 auto;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  outline: 0;
+
   background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-family: inherit;
@@ -404,12 +462,25 @@ img {
   color: var(--white-color);
 }
 
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .works .title {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
+}
+
+.works-name {
+  padding: 20px 24px;
 }
 
 .works .button-name {
