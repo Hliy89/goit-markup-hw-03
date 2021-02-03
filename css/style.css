@@ -94,6 +94,10 @@ img {
   align-items: center;
 }
 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -112,6 +116,10 @@ img {
 }
 
 /* Contacts */
+
+.contacts .item.item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .contacts {
   display: flex;
@@ -181,8 +189,8 @@ img {
 .container {
   margin: 0 auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: auto;
+  padding-right: auto;
   outline: 2px solid tomato;
 }
 
@@ -196,6 +204,10 @@ img {
 
 .features-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
 }
 
 .feature-title {
@@ -251,6 +263,10 @@ img {
   display: flex;
 }
 
+.team-list .team-card:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-name {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -296,7 +312,6 @@ img {
 }
 
 .address {
-  height: 252px;
   color: #ffffff;
   font-family: Roboto;
   font-style: normal;
