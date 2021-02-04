@@ -79,7 +79,7 @@ img {
 /* Site nav */
 
 .navigation {
-  margin-right: 331px;
+  margin-right: auto;
   display: flex;
   align-items: center;
 }
@@ -152,6 +152,7 @@ img {
 /* Hero */
 
 .hero {
+  margin: auto;
   max-width: 1600px;
   background-color: #2f303a;
 }
@@ -188,11 +189,6 @@ img {
   letter-spacing: 0.06em;
 }
 
-.button-hero {
-  display: flex;
-  justify-content: center;
-}
-
 .button.primary {
   min-width: 200px;
   margin-bottom: 200px;
@@ -210,14 +206,14 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid violet;
 }
 
 /* Features Особенности */
 
-.features {
-  padding-top: 0px;
-  padding-bottom: 94px;
+.section-features {
+  padding-top: 94px;
+  margin-bottom: 94px;
 }
 
 .container-features {
@@ -241,10 +237,6 @@ img {
   margin-top: 30px;
 }
 
-/* .features-list .item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .feature-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -267,25 +259,26 @@ img {
 }
 
 /* Чем мы занимаемся */
-.container > h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
 
 .works-list {
   margin-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.works-list .item:not(:last-child) {
-  margin-right: 30px;
+.works-list .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* Section */
 
 .section-title {
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -304,13 +297,16 @@ img {
 }
 
 .team-list {
-  /* margin-bottom: 94px; */
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.team-list .team-card:not(:last-child) {
-  margin-right: 30px;
+.team-list .team-card {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .user-info {
