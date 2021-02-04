@@ -210,7 +210,7 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Features Особенности */
@@ -315,6 +315,7 @@ img {
 
 .user-info {
   padding-top: 30px;
+  margin-bottom: 94px;
 }
 
 .team-name {
